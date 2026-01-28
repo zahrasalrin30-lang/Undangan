@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Undangan Website Premium Ryan & Zahra</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link rel="preload" as="video" href="https://hi.nikustory.id/wp-content/uploads/2025/09/VINTG09-V2-PII.mp4" type="video/mp4">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://pocaiiawtgclrzsypmoc.supabase.co/storage/v1/object/public/vintage9/css/abhayalibre.css">
+  <link rel="stylesheet" href="https://pocaiiawtgclrzsypmoc.supabase.co/storage/v1/object/public/vintage9/css/montserrat.css">
+  <link rel="stylesheet" href="https://pocaiiawtgclrzsypmoc.supabase.co/storage/v1/object/public/vintage9/css/frontend.min.css">
+  <link rel="stylesheet" href="https://pocaiiawtgclrzsypmoc.supabase.co/storage/v1/object/public/vintage9/css/post-30163.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --gold: #7AB2D3;
+      --espresso: #2A4365;
+      --cream: #F0F8FF;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--espresso);
+      font-family: 'Abhaya Libre', serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #desk_cov {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: calc(100% - 500px);
+      height: 100vh;
+      background-image: url('https://ik.imagekit.io/RyanZahra/Ryan&Zahra/KLD06802.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      padding: 40px;
+      text-align: center;
+      color: white;
+    }
+
+    #desk_cov::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(42, 67, 101, 0.4);
+      z-index: -1;
+    }
+
+    #isi {
+      margin-left: calc(100% - 500px);
+      width: 500px;
+      min-height: 100vh;
+      background: var(--cream);
+      position: relative;
+    }
+
+    @media (max-width: 1024px) {
+      #desk_cov { width: 50%; }
+      #isi { margin-left: 50%; width: 50%; }
+    }
+
+    @media (max-width: 768px) {
+      #desk_cov { display: none; }
+      #isi { margin-left: auto; margin-right: auto; width: 100%; }
+    }
+
+    #sec {
+      position: fixed;
+      top: 0; right: 0; left: 0;
+      z-index: 9999;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: opacity 1.5s cubic-bezier(0.65, 0, 0.35, 1), visibility 1.5s;
+    }
+
+    #kolom {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #sec.hidden-section {
+      opacity: 0;
+      visibility: hidden;
+    }
+    #sec.hidden-section #kolom {
+      transform: translateY(-100%);
+    }
+
+    .font-handwriting { font-family: 'Great Vibes', cursive; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    .font-arabic-calligraphy { font-family: 'Amiri', serif; }
+
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--cream); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.93.2",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
